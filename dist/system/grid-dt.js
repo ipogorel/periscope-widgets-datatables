@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['periscope-framework', 'jquery', 'datatables', 'datatables.net-bs', 'datatables.net-select', 'datatables.net-scroller', 'datatables.net-keytable', 'datatables.net-bs/css/datatables.bootstrap.css!', 'datatables.net-select-bs/css/select.bootstrap.css!', 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!', 'lodash'], function (_export, _context) {
+System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.net-bs', 'datatables.net-select', 'datatables.net-scroller', 'datatables.net-keytable', 'datatables.net-bs/css/datatables.bootstrap.css!', 'datatables.net-select-bs/css/select.bootstrap.css!', 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!', 'lodash'], function (_export, _context) {
   var Grid, Query, FormatValueConverter, $, factoryDt, factoryDtBs, factoryDtSelect, factoryDtScroller, factoryDtKeytable, _, DT_SELECT_EVENT, DT_DESELECT_EVENT, DT_DRAW_EVENT, DT_DRAW_PAGE, DT_KEYFOCUS_EVENT, DT_KEY_EVENT, GridDT;
 
   function _classCallCheck(instance, Constructor) {
@@ -40,8 +40,8 @@ System.register(['periscope-framework', 'jquery', 'datatables', 'datatables.net-
       FormatValueConverter = _periscopeFramework.FormatValueConverter;
     }, function (_jquery) {
       $ = _jquery.default;
-    }, function (_datatables) {
-      factoryDt = _datatables.default;
+    }, function (_datatablesNet) {
+      factoryDt = _datatablesNet.default;
     }, function (_datatablesNetBs) {
       factoryDtBs = _datatablesNetBs.default;
     }, function (_datatablesNetSelect) {

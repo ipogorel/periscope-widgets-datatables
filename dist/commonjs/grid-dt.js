@@ -11,7 +11,7 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _datatables = require('datatables');
+var _datatables = require('datatables.net');
 
 var _datatables2 = _interopRequireDefault(_datatables);
 

@@ -1,4 +1,4 @@
-define(['exports', 'periscope-framework', 'jquery', 'datatables', 'datatables.net-bs', 'datatables.net-select', 'datatables.net-scroller', 'datatables.net-keytable', 'lodash', 'datatables.net-bs/css/datatables.bootstrap.css!', 'datatables.net-select-bs/css/select.bootstrap.css!', 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!'], function (exports, _periscopeFramework, _jquery, _datatables, _datatables3, _datatables5, _datatables7, _datatables9, _lodash) {
+define(['exports', 'periscope-framework', 'jquery', 'datatables.net', 'datatables.net-bs', 'datatables.net-select', 'datatables.net-scroller', 'datatables.net-keytable', 'lodash', 'datatables.net-bs/css/datatables.bootstrap.css!', 'datatables.net-select-bs/css/select.bootstrap.css!', 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!'], function (exports, _periscopeFramework, _jquery, _datatables, _datatables3, _datatables5, _datatables7, _datatables9, _lodash) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {

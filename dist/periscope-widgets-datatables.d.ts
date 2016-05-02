@@ -1,12 +1,12 @@
 declare module 'periscope-widgets-datatables' {
   import $ from 'jquery';
-  import factoryDt from 'datatables';
   import * as _ from 'lodash';
   import {
     Grid,
     Query,
     FormatValueConverter
   } from 'periscope-framework';
+  import factoryDt from 'datatables.net';
   import factoryDtBs from 'datatables.net-bs';
   import factoryDtSelect from 'datatables.net-select';
   import factoryDtScroller from 'datatables.net-scroller';

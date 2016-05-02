@@ -22,15 +22,15 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _datatables = require('datatables');
-
-var _datatables2 = _interopRequireDefault(_datatables);
-
 var _lodash = require('lodash');
 
 var _ = _interopRequireWildcard(_lodash);
 
 var _periscopeFramework = require('periscope-framework');
+
+var _datatables = require('datatables.net');
+
+var _datatables2 = _interopRequireDefault(_datatables);
 
 var _datatables3 = require('datatables.net-bs');
 

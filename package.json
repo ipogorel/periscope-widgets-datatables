@@ -1,6 +1,6 @@
 {
   "name": "periscope-widgets-datatables",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Perscope implementation of https://datatables.net/ grid",
   "keywords": [
     "periscope",
@@ -40,7 +40,7 @@
       "aurelia-templating-resources": "^1.0.0-beta.1.1.3",
       "aurelia-templating-router": "^1.0.0-beta.1.1.2",
       "bootstrap": "^3.3.6",
-      "datatables": "datatables.net@^1.10.11",
+      "datatables.net": "^1.10.11",
       "datatables.net-bs": "^1.10.11",
       "datatables.net-keytable": "^2.1.1",
       "datatables.net-keytable-bs": "^2.1.1",

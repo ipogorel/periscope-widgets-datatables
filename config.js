@@ -26,7 +26,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.1.13",
     "bootstrap": "npm:bootstrap@3.3.6",
     "core-js": "npm:core-js@2.0.3",
-    "datatables": "npm:datatables.net@1.10.11",
+    "datatables.net": "npm:datatables.net@1.10.11",
     "datatables.net-bs": "npm:datatables.net-bs@1.10.11",
     "datatables.net-keytable": "npm:datatables.net-keytable@2.1.1",
     "datatables.net-keytable-bs": "npm:datatables.net-keytable-bs@2.1.1",

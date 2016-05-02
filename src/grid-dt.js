@@ -1,7 +1,7 @@
 import {Grid, Query, FormatValueConverter} from 'periscope-framework';
 import $ from 'jquery';
 
-import factoryDt from 'datatables';
+import factoryDt from 'datatables.net';
 import factoryDtBs from 'datatables.net-bs';
 import factoryDtSelect from 'datatables.net-select';
 import factoryDtScroller from 'datatables.net-scroller';
