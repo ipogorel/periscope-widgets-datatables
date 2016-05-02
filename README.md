@@ -1,6 +1,6 @@
-# periscope-abstractions
+# periscope-wigdets-datatables
 
-This library is part of the [Periscope] platform and contains an abstractions layer.
+This library is part of the [Periscope] platform and contains Datatables.net grid implementation
 
 
 ## Running The App
