@@ -36,7 +36,6 @@ System.config({
     "jquery": "npm:jquery@2.2.3",
     "lodash": "npm:lodash@4.11.1",
     "periscope-framework": "npm:periscope-framework@0.0.9",
-    "swagger-client": "npm:swagger-client@2.1.14",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

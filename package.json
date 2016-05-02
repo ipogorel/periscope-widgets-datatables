@@ -49,8 +49,7 @@
       "datatables.net-select-bs": "^1.1.2",
       "jquery": "^2.2.3",
       "lodash": "^4.11.1",
-      "periscope-framework": "^0.0.9",
-      "swagger-client": "^2.1.14"
+      "periscope-framework": "^0.0.9"
     },
     "devDependencies": {
       "babel": "^5.1.13",

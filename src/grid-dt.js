@@ -61,7 +61,6 @@ export class GridDT extends Grid {
     this.dataTable = $(this.gridElement).DataTable({
       select: true,
       lengthChange: false,
-
       scrollY: this._calculateHeight($(this.gridElement)),
       deferRender: true,
       scroller: true,
@@ -117,7 +116,6 @@ export class GridDT extends Grid {
     $(this.gridElement).find("tbody").on('dblclick', 'tr', e => {
       this.onActivated($(e.target.parentNode)[0]._DT_RowIndex);
     });
-
   }
 
 
