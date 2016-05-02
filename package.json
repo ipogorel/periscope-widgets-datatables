@@ -1,6 +1,6 @@
 {
   "name": "periscope-widgets-datatables",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "Perscope implementation of https://datatables.net/ grid",
   "keywords": [
     "periscope",
