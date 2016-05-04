@@ -16,6 +16,9 @@ Object.keys(_gridDt).forEach(function (key) {
   });
 });
 exports.configure = configure;
+
+require("./periscope-widgets-datatables.css!");
+
 function configure(aurelia) {
   aurelia.globalResources("./grid-dt");
 }

@@ -14,6 +14,7 @@ declare module 'periscope-widgets-datatables' {
   import 'datatables.net-bs/css/datatables.bootstrap.css!';
   import 'datatables.net-select-bs/css/select.bootstrap.css!';
   import 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!';
+  import './periscope-widgets-datatables.css!';
   export class GridDT extends Grid {
     constructor(settings: any);
     initGridLib(): any;

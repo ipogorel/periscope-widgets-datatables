@@ -104,7 +104,6 @@ var GridDT = exports.GridDT = function (_Grid) {
     this.dataTable = (0, _jquery2.default)(this.gridElement).DataTable({
       select: true,
       lengthChange: false,
-
       scrollY: this._calculateHeight((0, _jquery2.default)(this.gridElement)),
       deferRender: true,
       scroller: true,

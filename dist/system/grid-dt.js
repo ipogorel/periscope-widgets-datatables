@@ -107,7 +107,6 @@ System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.
           this.dataTable = $(this.gridElement).DataTable({
             select: true,
             lengthChange: false,
-
             scrollY: this._calculateHeight($(this.gridElement)),
             deferRender: true,
             scroller: true,

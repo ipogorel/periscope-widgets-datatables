@@ -1,4 +1,4 @@
-define(["exports", "./grid-dt"], function (exports, _gridDt) {
+define(["exports", "./grid-dt", "./periscope-widgets-datatables.css!"], function (exports, _gridDt) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {

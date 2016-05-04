@@ -54,6 +54,8 @@ require('datatables.net-select-bs/css/select.bootstrap.css!');
 
 require('datatables.net-keytable-bs/css/keyTable.bootstrap.css!');
 
+require('./periscope-widgets-datatables.css!');
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -117,7 +119,6 @@ var GridDT = exports.GridDT = function (_Grid) {
     this.dataTable = (0, _jquery2.default)(this.gridElement).DataTable({
       select: true,
       lengthChange: false,
-
       scrollY: this._calculateHeight((0, _jquery2.default)(this.gridElement)),
       deferRender: true,
       scroller: true,

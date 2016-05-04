@@ -56,7 +56,6 @@ export let GridDT = class GridDT extends Grid {
     this.dataTable = $(this.gridElement).DataTable({
       select: true,
       lengthChange: false,
-
       scrollY: this._calculateHeight($(this.gridElement)),
       deferRender: true,
       scroller: true,
