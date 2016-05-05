@@ -1,7 +1,7 @@
 'use strict';
 
 System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.net-bs', 'datatables.net-select', 'datatables.net-scroller', 'datatables.net-keytable', 'datatables.net-bs/css/datatables.bootstrap.css!', 'datatables.net-select-bs/css/select.bootstrap.css!', 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!', 'lodash'], function (_export, _context) {
-  var Grid, Query, FormatValueConverter, $, factoryDt, factoryDtBs, factoryDtSelect, factoryDtScroller, factoryDtKeytable, _, DT_SELECT_EVENT, DT_DESELECT_EVENT, DT_DRAW_EVENT, DT_DRAW_PAGE, DT_KEYFOCUS_EVENT, DT_KEY_EVENT, GridDT;
+  var Grid, Query, FormatValueConverter, $, factoryDt, factoryDtBs, factoryDtSelect, factoryDtScroller, factoryDtKeytable, _, DEFAULT_HEIGHT, DT_SELECT_EVENT, DT_DESELECT_EVENT, DT_DRAW_EVENT, DT_DRAW_PAGE, DT_KEYFOCUS_EVENT, DT_KEY_EVENT, GridDT;
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -54,6 +54,7 @@ System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.
       _ = _lodash;
     }],
     execute: function () {
+      DEFAULT_HEIGHT = 450;
       DT_SELECT_EVENT = 'select.dt';
       DT_DESELECT_EVENT = 'deselect.dt';
       DT_DRAW_EVENT = 'draw.dt';
@@ -107,7 +108,7 @@ System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.
           this.dataTable = $(this.gridElement).DataTable({
             select: true,
             lengthChange: false,
-            scrollY: this._calculateHeight($(this.gridElement)),
+            scrollY: this.minHeight ? this.minHeight - 40 - 30 : DEFAULT_HEIGHT,
             deferRender: true,
             scroller: true,
             paging: true,

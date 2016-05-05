@@ -73,6 +73,7 @@ define(['exports', 'periscope-framework', 'jquery', 'datatables.net', 'datatable
     if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
 
+  var DEFAULT_HEIGHT = 450;
   var DT_SELECT_EVENT = 'select.dt';
   var DT_DESELECT_EVENT = 'deselect.dt';
   var DT_DRAW_EVENT = 'draw.dt';
@@ -126,7 +127,7 @@ define(['exports', 'periscope-framework', 'jquery', 'datatables.net', 'datatable
       this.dataTable = (0, _jquery2.default)(this.gridElement).DataTable({
         select: true,
         lengthChange: false,
-        scrollY: this._calculateHeight((0, _jquery2.default)(this.gridElement)),
+        scrollY: this.minHeight ? this.minHeight - 40 - 30 : DEFAULT_HEIGHT,
         deferRender: true,
         scroller: true,
         paging: true,

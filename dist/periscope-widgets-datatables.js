@@ -12,6 +12,7 @@ import 'datatables.net-bs/css/datatables.bootstrap.css!';
 import 'datatables.net-select-bs/css/select.bootstrap.css!';
 import 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!';
 
+const DEFAULT_HEIGHT = 450;
 const DT_SELECT_EVENT = 'select.dt';
 const DT_DESELECT_EVENT = 'deselect.dt';
 const DT_DRAW_EVENT = 'draw.dt';
@@ -60,7 +61,7 @@ export class GridDT extends Grid {
     this.dataTable = $(this.gridElement).DataTable({
       select: true,
       lengthChange: false,
-      scrollY: this._calculateHeight($(this.gridElement)),
+      scrollY: this.minHeight? this.minHeight - 40 - 30 : DEFAULT_HEIGHT,//40px - header height, 30px - footer height
       deferRender: true,
       scroller: true,
       paging: true,
