@@ -143,7 +143,7 @@ var GridDT = exports.GridDT = function (_Grid) {
           query.sort = me.columns[request.order[0].column].field;
           query.sortDir = request.order[0].dir;
         }
-        query.serverSideFilter = me.dataFilter;
+        query.filter = me.dataFilter;
         me.dataSource.getData(query).then(function (dH) {
           drawCallback({ data: dH.data, recordsTotal: dH.total, recordsFiltered: dH.total });
         }, function (error) {
