@@ -15,7 +15,7 @@ System.config({
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.5",
-    "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.4",
+    "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.2",
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.1",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.2",
@@ -35,9 +35,9 @@ System.config({
     "datatables.net-select-bs": "npm:datatables.net-select-bs@1.1.2",
     "jquery": "npm:jquery@2.2.3",
     "lodash": "npm:lodash@4.12.0",
-    "periscope-framework": "npm:periscope-framework@0.0.13",
+    "periscope-framework": "npm:periscope-framework@0.0.16",
     "github:jspm/nodelibs-assert@0.1.0": {
-      "assert": "npm:assert@1.3.0"
+      "assert": "npm:assert@1.4.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.6.0"
@@ -124,7 +124,11 @@ System.config({
       "minimalistic-assert": "npm:minimalistic-assert@1.0.0",
       "vm": "github:jspm/nodelibs-vm@0.1.0"
     },
-    "npm:assert@1.3.0": {
+    "npm:assert@1.4.0": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "buffer-shims": "npm:buffer-shims@1.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
       "util": "npm:util@0.10.3"
     },
     "npm:async@1.5.2": {
@@ -136,7 +140,7 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.1",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.0"
     },
-    "npm:aurelia-binding@1.0.0-beta.1.3.5": {
+    "npm:aurelia-binding@1.0.0-beta.1.3.6": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.1",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2",
@@ -144,7 +148,7 @@ System.config({
     },
     "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0": {
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.2.0",
-      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.4",
+      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
       "aurelia-history": "npm:aurelia-history@1.0.0-beta.1.2.0",
       "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.2.0",
       "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.2",
@@ -174,8 +178,8 @@ System.config({
     "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1"
     },
-    "npm:aurelia-framework@1.0.0-beta.1.2.4": {
-      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.5",
+    "npm:aurelia-framework@1.0.0-beta.1.2.5": {
+      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.6",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
       "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.2.0",
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1",
@@ -233,7 +237,7 @@ System.config({
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1.2.2",
       "aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.0.0-beta.1.2.0"
     },
-    "npm:aurelia-router@1.0.0-beta.1.2.2": {
+    "npm:aurelia-router@1.0.0-beta.1.2.3": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1",
       "aurelia-history": "npm:aurelia-history@1.0.0-beta.1.2.1",
@@ -283,7 +287,7 @@ System.config({
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.0"
     },
     "npm:aurelia-templating@1.0.0-beta.1.2.7": {
-      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.5",
+      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.6",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
       "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.2.0",
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1",
@@ -349,12 +353,15 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "pako": "npm:pako@0.2.8",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "readable-stream": "npm:readable-stream@2.1.2",
+      "readable-stream": "npm:readable-stream@2.1.3",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:btoa@1.1.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:buffer-shims@1.0.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:buffer-xor@1.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -596,11 +603,11 @@ System.config({
     "npm:pegjs@0.9.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:periscope-framework@0.0.13": {
+    "npm:periscope-framework@0.0.16": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.5",
-      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.4",
+      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
       "aurelia-history": "npm:aurelia-history@1.0.0-beta.1.2.1",
       "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.2.1",
       "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.2.0",
@@ -612,7 +619,7 @@ System.config({
       "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.1",
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1.2.2",
       "aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.0.0-beta.1.2.1",
-      "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.2",
+      "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.3",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.1",
       "lodash": "npm:lodash@4.12.0",
       "moment": "npm:moment@2.13.0",
@@ -666,8 +673,9 @@ System.config({
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
     },
-    "npm:readable-stream@2.1.2": {
+    "npm:readable-stream@2.1.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "buffer-shims": "npm:buffer-shims@1.0.0",
       "core-util-is": "npm:core-util-is@1.0.2",
       "events": "github:jspm/nodelibs-events@0.1.1",
       "inherits": "npm:inherits@2.0.1",
