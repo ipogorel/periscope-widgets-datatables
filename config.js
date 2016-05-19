@@ -36,7 +36,6 @@ System.config({
     "jquery": "npm:jquery@2.2.3",
     "lodash": "npm:lodash@4.12.0",
     "periscope-framework": "npm:periscope-framework@0.0.16",
-    "periscope-ui": "npm:periscope-ui@0.0.8",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.0"
     },
@@ -580,22 +579,6 @@ System.config({
       "moment": "npm:moment@2.13.0",
       "numeral": "npm:numeral@1.5.3",
       "pegjs": "npm:pegjs@0.9.0",
-      "swagger-client": "npm:swagger-client@2.1.14"
-    },
-    "npm:periscope-ui@0.0.8": {
-      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.1",
-      "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.5",
-      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
-      "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.2",
-      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.1",
-      "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.4",
-      "aurelia-templating-binding": "npm:aurelia-templating-binding@1.0.0-beta.1.2.4",
-      "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0-beta.1.2.6",
-      "aurelia-templating-router": "npm:aurelia-templating-router@1.0.0-beta.1.2.1",
-      "bootstrap": "npm:bootstrap@3.3.6",
-      "jquery": "npm:jquery@2.2.3",
-      "lodash": "npm:lodash@4.12.0",
-      "periscope-framework": "npm:periscope-framework@0.0.16",
       "swagger-client": "npm:swagger-client@2.1.14"
     },
     "npm:process-nextick-args@1.0.7": {
