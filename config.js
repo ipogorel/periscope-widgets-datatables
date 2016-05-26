@@ -17,7 +17,7 @@ System.config({
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.5",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.2",
-    "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.1",
+    "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.2.0.1",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.4",
     "aurelia-templating-binding": "npm:aurelia-templating-binding@1.0.0-beta.1.2.4",
     "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0-beta.1.2.6",
@@ -34,8 +34,8 @@ System.config({
     "datatables.net-select": "npm:datatables.net-select@1.1.2",
     "datatables.net-select-bs": "npm:datatables.net-select-bs@1.1.2",
     "jquery": "npm:jquery@2.2.3",
-    "lodash": "npm:lodash@4.12.0",
-    "periscope-framework": "npm:periscope-framework@0.0.16",
+    "lodash": "npm:lodash@4.13.1",
+    "periscope-framework": "npm:periscope-framework@0.0.17",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.0"
     },
@@ -148,7 +148,7 @@ System.config({
       "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.2",
       "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0-beta.1.2.1",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2",
-      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.1",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.2.0.1",
       "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.4",
       "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.3",
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.7",
@@ -192,10 +192,13 @@ System.config({
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2"
     },
+    "npm:aurelia-logging-console@1.0.0-beta.1.2.2": {
+      "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1"
+    },
     "npm:aurelia-metadata@1.0.0-beta.1.2.1": {
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2"
     },
-    "npm:aurelia-pal-browser@1.0.0-beta.1.2.1": {
+    "npm:aurelia-pal-browser@1.0.0-beta.2.0.1": {
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2"
     },
     "npm:aurelia-polyfills@1.0.0-beta.1.1.4": {
@@ -297,7 +300,7 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "create-hmac": "npm:create-hmac@1.1.4",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "elliptic": "npm:elliptic@6.2.3",
+      "elliptic": "npm:elliptic@6.2.7",
       "inherits": "npm:inherits@2.0.1",
       "parse-asn1": "npm:parse-asn1@5.0.0",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
@@ -307,7 +310,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "pako": "npm:pako@0.2.8",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "readable-stream": "npm:readable-stream@2.1.3",
+      "readable-stream": "npm:readable-stream@2.1.4",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:btoa@1.1.2": {
@@ -357,7 +360,7 @@ System.config({
       "bn.js": "npm:bn.js@4.11.3",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "elliptic": "npm:elliptic@6.2.3"
+      "elliptic": "npm:elliptic@6.2.7"
     },
     "npm:create-hash@1.1.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -444,7 +447,7 @@ System.config({
       "randombytes": "npm:randombytes@2.0.3",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
-    "npm:elliptic@6.2.3": {
+    "npm:elliptic@6.2.7": {
       "bn.js": "npm:bn.js@4.11.3",
       "brorand": "npm:brorand@1.0.5",
       "hash.js": "npm:hash.js@1.0.3",
@@ -501,7 +504,7 @@ System.config({
     "npm:lodash-compat@3.10.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:lodash@4.12.0": {
+    "npm:lodash@4.13.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -557,7 +560,7 @@ System.config({
     "npm:pegjs@0.9.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:periscope-framework@0.0.16": {
+    "npm:periscope-framework@0.0.17": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.5",
@@ -567,15 +570,15 @@ System.config({
       "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.2.0",
       "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.2",
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1",
-      "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0-beta.1.2.1",
+      "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0-beta.1.2.2",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.1",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2",
-      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.1",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.2.0.1",
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1.2.2",
       "aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.0.0-beta.1.2.1",
       "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.3",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.1",
-      "lodash": "npm:lodash@4.12.0",
+      "lodash": "npm:lodash@4.13.1",
       "moment": "npm:moment@2.13.0",
       "numeral": "npm:numeral@1.5.3",
       "pegjs": "npm:pegjs@0.9.0",
@@ -627,7 +630,7 @@ System.config({
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
     },
-    "npm:readable-stream@2.1.3": {
+    "npm:readable-stream@2.1.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "buffer-shims": "npm:buffer-shims@1.0.0",
       "core-util-is": "npm:core-util-is@1.0.2",
