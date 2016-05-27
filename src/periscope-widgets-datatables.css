@@ -7,5 +7,5 @@ table.dataTable td.focus {
 }
 
 .dataTables_wrapper .pagination{
-  display: none;
+ /* display: none;*/
 }

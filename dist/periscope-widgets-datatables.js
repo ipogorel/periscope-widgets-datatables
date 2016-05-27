@@ -63,9 +63,9 @@ export class GridDT extends Grid {
       lengthChange: false,
       scrollY: this.minHeight? this.minHeight - 40 - 30 : DEFAULT_HEIGHT,//40px - header height, 30px - footer height
       deferRender: true,
-      scroller: true,
+      scroller: false,
       paging: true,
-      pagingType: "simple",
+      pagingType: "numbers",
 
       processing: true,
       responsive: true,
