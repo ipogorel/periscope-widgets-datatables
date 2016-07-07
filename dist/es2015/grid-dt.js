@@ -42,14 +42,16 @@ export let GridDT = class GridDT extends Grid {
 
   refresh() {
     super.refresh();
-    if (!this.dataTable) return;
+    let me = this;
 
-    if (this.autoGenerateColumns) {
-      this.createColumns().then(() => {
-        this.detached();
-        this.createGrid();
+    if (me.autoGenerateColumns) {
+      me.createColumns().then(() => {
+        me.detached();
+        me.createGrid();
       });
-    } else this.dataTable.draw();
+    } else {
+      if (me.dataTable) me.dataTable.draw();
+    }
   }
 
   createGrid() {

@@ -1,6 +1,8 @@
 "use strict";
 
 System.register(["./periscope-widgets-datatables.css!", "./grid-dt"], function (_export, _context) {
+  "use strict";
+
   return {
     setters: [function (_periscopeWidgetsDatatablesCss) {}, function (_gridDt) {
       var _exportObj = {};

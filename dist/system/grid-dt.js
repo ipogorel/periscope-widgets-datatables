@@ -1,6 +1,8 @@
 'use strict';
 
 System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.net-bs', 'datatables.net-select', 'datatables.net-scroller', 'datatables.net-keytable', 'datatables.net-bs/css/datatables.bootstrap.css!', 'datatables.net-select-bs/css/select.bootstrap.css!', 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!', 'lodash'], function (_export, _context) {
+  "use strict";
+
   var Grid, Query, FormatValueConverter, $, factoryDt, factoryDtBs, factoryDtSelect, factoryDtScroller, factoryDtKeytable, _, DEFAULT_HEIGHT, DT_SELECT_EVENT, DT_DESELECT_EVENT, DT_DRAW_EVENT, DT_DRAW_PAGE, DT_KEYFOCUS_EVENT, DT_KEY_EVENT, GridDT;
 
   function _classCallCheck(instance, Constructor) {
@@ -88,21 +90,21 @@ System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.
         };
 
         GridDT.prototype.refresh = function refresh() {
-          var _this2 = this;
-
           _Grid.prototype.refresh.call(this);
-          if (!this.dataTable) return;
+          var me = this;
 
-          if (this.autoGenerateColumns) {
-            this.createColumns().then(function () {
-              _this2.detached();
-              _this2.createGrid();
+          if (me.autoGenerateColumns) {
+            me.createColumns().then(function () {
+              me.detached();
+              me.createGrid();
             });
-          } else this.dataTable.draw();
+          } else {
+            if (me.dataTable) me.dataTable.draw();
+          }
         };
 
         GridDT.prototype.createGrid = function createGrid() {
-          var _this3 = this;
+          var _this2 = this;
 
           var me = this;
           this.dataTable = $(this.gridElement).DataTable({
@@ -147,40 +149,40 @@ System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.
                 title: c.title ? c.title : c.field,
                 type: c.format,
                 render: c.format ? function (data, type, full, meta) {
-                  return FormatValueConverter.format(data, _this3.columns[meta.col].format);
+                  return FormatValueConverter.format(data, _this2.columns[meta.col].format);
                 } : {}
               };
             })
           });
           this.dataTable.on(DT_SELECT_EVENT, function (e, d, t, idx) {
-            return _this3.onSelected(idx);
+            return _this2.onSelected(idx);
           });
           this.dataTable.on(DT_DESELECT_EVENT, function () {
-            return _this3.onDeselected();
+            return _this2.onDeselected();
           });
           this.dataTable.on(DT_DRAW_EVENT, function () {
-            return _this3.handleRedraw();
+            return _this2.handleRedraw();
           });
           this.dataTable.on(DT_KEYFOCUS_EVENT, function () {
-            return _this3.onFocus();
+            return _this2.onFocus();
           });
           this.dataTable.on(DT_DRAW_PAGE, function () {
-            return _this3.onPageChanged();
+            return _this2.onPageChanged();
           });
           this.dataTable.on(DT_KEY_EVENT, function (e, datatable, key, cell, originalEvent) {
-            return _this3.onKeyPressed(key, cell);
+            return _this2.onKeyPressed(key, cell);
           });
 
           $(this.gridElement).find("tbody").on('dblclick', 'tr', function (e) {
-            _this3.onActivated($(e.target.parentNode)[0]._DT_RowIndex);
+            _this2.onActivated($(e.target.parentNode)[0]._DT_RowIndex);
           });
         };
 
         GridDT.prototype.createColumns = function createColumns() {
-          var _this4 = this;
+          var _this3 = this;
 
           return this.dataSource.transport.readService.getSchema().then(function (schema) {
-            _this4.columns = _.map(schema.fields, function (f) {
+            _this3.columns = _.map(schema.fields, function (f) {
               return { field: f.field };
             });
           });
