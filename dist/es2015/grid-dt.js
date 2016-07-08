@@ -116,9 +116,25 @@ export let GridDT = class GridDT extends Grid {
   }
 
   createColumns() {
+    this.columns = [];
     return this.dataSource.transport.readService.getSchema().then(schema => {
-      this.columns = _.map(schema.fields, f => {
-        return { field: f.field };
+      if (!schema.fields.length > 0) {
+        this.columns = _.map(schema.fields, f => {
+          return { field: f.field };
+        });
+      }
+
+      let query = new Query();
+      query.take = 1;
+      query.skip = 0;
+      query.filter = this.dataFilter;
+      return this.dataSource.getData(query).then(dH => {
+        if (dH.total > 0) {
+          _.forOwn(dH.data[0], (value, key) => {
+            this.columns.push({ field: key });
+          });
+          return this.columns;
+        }
       });
     });
   }

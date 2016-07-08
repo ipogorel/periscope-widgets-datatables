@@ -181,9 +181,25 @@ System.register(['periscope-framework', 'jquery', 'datatables.net', 'datatables.
         GridDT.prototype.createColumns = function createColumns() {
           var _this3 = this;
 
+          this.columns = [];
           return this.dataSource.transport.readService.getSchema().then(function (schema) {
-            _this3.columns = _.map(schema.fields, function (f) {
-              return { field: f.field };
+            if (!schema.fields.length > 0) {
+              _this3.columns = _.map(schema.fields, function (f) {
+                return { field: f.field };
+              });
+            }
+
+            var query = new Query();
+            query.take = 1;
+            query.skip = 0;
+            query.filter = _this3.dataFilter;
+            return _this3.dataSource.getData(query).then(function (dH) {
+              if (dH.total > 0) {
+                _.forOwn(dH.data[0], function (value, key) {
+                  _this3.columns.push({ field: key });
+                });
+                return _this3.columns;
+              }
             });
           });
         };
