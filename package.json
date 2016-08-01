@@ -1,6 +1,6 @@
 {
   "name": "periscope-widgets-datatables",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Perscope implementation of https://datatables.net/ grid",
   "keywords": [
     "periscope",
@@ -49,7 +49,7 @@
       "datatables.net-select-bs": "^1.1.2",
       "jquery": "^2.2.3",
       "lodash": "^4.11.1",
-      "periscope-framework": "^0.0.21"
+      "periscope-framework": "^0.0.22"
     },
     "devDependencies": {
       "babel": "^5.1.13",
