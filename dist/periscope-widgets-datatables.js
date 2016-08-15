@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import * as _ from 'lodash';
-import {Grid,Query,FormatValueConverter} from 'periscope-framework';
+import {Grid,Query,FormatValueConverter,PeriscopeFactory} from 'periscope-framework';
 
 import factoryDt from 'datatables.net';
 import factoryDtBs from 'datatables.net-bs';
@@ -21,8 +21,8 @@ const DT_KEYFOCUS_EVENT = 'key-focus';
 const DT_KEY_EVENT = 'key';
 
 export class GridDT extends Grid {
- constructor(settings){
-   super(settings);
+ constructor(){
+   super();
    this.selectedColumnIndex = -1;
    this.initGridLib();
  }
@@ -194,10 +194,12 @@ export class GridDT extends Grid {
 
 }
 
-import "./periscope-widgets-datatables.css!"
+import "./periscope-widgets-datatables.css!";
 export * from './grid-dt';
 
 export function configure(aurelia) {
+  let pf = aurelia.container.get(PeriscopeFactory);
+  pf.addReference(GridDT);
   aurelia.globalResources(
     "./grid-dt"
   );

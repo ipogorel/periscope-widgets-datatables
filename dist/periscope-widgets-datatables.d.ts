@@ -4,7 +4,8 @@ declare module 'periscope-widgets-datatables' {
   import {
     Grid,
     Query,
-    FormatValueConverter
+    FormatValueConverter,
+    PeriscopeFactory
   } from 'periscope-framework';
   import factoryDt from 'datatables.net';
   import factoryDtBs from 'datatables.net-bs';
@@ -16,7 +17,7 @@ declare module 'periscope-widgets-datatables' {
   import 'datatables.net-keytable-bs/css/keyTable.bootstrap.css!';
   import './periscope-widgets-datatables.css!';
   export class GridDT extends Grid {
-    constructor(settings: any);
+    constructor();
     initGridLib(): any;
     attached(): any;
     refresh(): any;

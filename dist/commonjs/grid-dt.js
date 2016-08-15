@@ -62,10 +62,10 @@ var DT_KEY_EVENT = 'key';
 var GridDT = exports.GridDT = function (_Grid) {
   _inherits(GridDT, _Grid);
 
-  function GridDT(settings) {
+  function GridDT() {
     _classCallCheck(this, GridDT);
 
-    var _this = _possibleConstructorReturn(this, _Grid.call(this, settings));
+    var _this = _possibleConstructorReturn(this, _Grid.call(this));
 
     _this.selectedColumnIndex = -1;
     _this.initGridLib();

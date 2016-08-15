@@ -1,5 +1,5 @@
-define(["exports", "./grid-dt", "./periscope-widgets-datatables.css!"], function (exports, _gridDt) {
-  "use strict";
+define(['exports', './grid-dt', 'periscope-framework', './periscope-widgets-datatables.css!'], function (exports, _gridDt, _periscopeFramework) {
+  'use strict';
 
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -15,6 +15,8 @@ define(["exports", "./grid-dt", "./periscope-widgets-datatables.css!"], function
   });
   exports.configure = configure;
   function configure(aurelia) {
+    var pf = aurelia.container.get(_periscopeFramework.PeriscopeFactory);
+    pf.addReference(_gridDt.GridDT);
     aurelia.globalResources("./grid-dt");
   }
 });

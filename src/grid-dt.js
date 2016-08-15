@@ -22,8 +22,8 @@ const DT_KEYFOCUS_EVENT = 'key-focus';
 const DT_KEY_EVENT = 'key';
 
 export class GridDT extends Grid {
- constructor(settings){
-   super(settings);
+ constructor(){
+   super();
    this.selectedColumnIndex = -1;
    this.initGridLib();
  }
@@ -55,9 +55,7 @@ export class GridDT extends Grid {
       if (me.dataTable)
         me.dataTable.draw();
     }
-
   }
-
 
   createGrid(){
     var me = this;
